@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFA8EC26-87F3-4D3B-8DFB-0CDA887FD24C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SnakeStorm</RootNamespace>
+    <AssemblyName>SnakeStorm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="KaizenSoft - FBEL">
+      <HintPath>..\..\KaizenSoft - FBEL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualReactiveWinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ee513efc52b401d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visual.Reactive.WinForms.1.0.0\lib\VisualReactiveWinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmSnake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSnake.Designer.cs">
+      <DependentUpon>frmSnake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Highscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Highscore.Designer.cs">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launcher.Designer.cs">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFacebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFacebook.Designer.cs">
+      <DependentUpon>LoginFacebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGoogle+.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGoogle+.Designer.cs">
+      <DependentUpon>LoginGoogle+.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginTwitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginTwitter.Designer.cs">
+      <DependentUpon>LoginTwitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Music.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music.Designer.cs">
+      <DependentUpon>Music.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial.Designer.cs">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmSnake.resx">
+      <DependentUpon>frmSnake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highscore.resx">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launcher.resx">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFacebook.resx">
+      <DependentUpon>LoginFacebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGoogle+.resx">
+      <DependentUpon>LoginGoogle+.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginTwitter.resx">
+      <DependentUpon>LoginTwitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music.resx">
+      <DependentUpon>Music.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial.resx">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guna.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\template music.png" />
+    <None Include="Resources\machine in the walls tboi.png" />
+    <None Include="Resources\machine in the walls.png" />
+    <None Include="Resources\tboi machine in the walls.png" />
+    <None Include="Resources\ebine.png" />
+    <None Include="Resources\sd1.png" />
+    <None Include="Resources\sss.png" />
+    <None Include="Resources\sd.png" />
+    <None Include="Resources\ccaluma.png" />
+    <None Include="Resources\tboiii1.png" />
+    <None Include="Resources\tboiii.png" />
+    <None Include="Resources\musci2.png" />
+    <None Include="Resources\musci1.png" />
+    <None Include="Resources\musci.png" />
+    <None Include="Resources\overlaygame.png" />
+    <None Include="Resources\pas2.png" />
+    <None Include="Resources\qwe4.png" />
+    <None Include="Resources\qwe3.png" />
+    <None Include="Resources\qwe2.png" />
+    <None Include="Resources\qwe1.png" />
+    <None Include="Resources\gataa.png" />
+    <None Include="Resources\borderdown.png" />
+    <None Include="Resources\qwe.png" />
+    <None Include="Resources\cropcut.png" />
+    <None Include="Resources\alex1.png" />
+    <None Include="Resources\hudys - Copy1.png" />
+    <None Include="Resources\cropcut - Copy.png" />
+    <None Include="Resources\hudys1.png" />
+    <None Include="Resources\hudys - Copy.png" />
+    <None Include="Resources\hudys.png" />
+    <None Include="Resources\highscorepng1.png" />
+    <None Include="Resources\leaderboardpngg8.png" />
+    <None Include="Resources\leaderboardpngg7.png" />
+    <None Include="Resources\leaderboardpngg6.png" />
+    <None Include="Resources\leaderboardpngg5.png" />
+    <None Include="Resources\leaderboardpngg4.png" />
+    <None Include="Resources\leaderboardpngg3.png" />
+    <None Include="Resources\leaderboardpngg2.png" />
+    <None Include="Resources\leaderboardpngg1.png" />
+    <None Include="Resources\launcherpng1.png" />
+    <None Include="Resources\launcherpng.png" />
+    <None Include="Resources\snaek.png" />
+    <None Include="Resources\highscorepng.png" />
+    <None Include="Resources\leaderboardpngg.png" />
+    <None Include="Resources\huddpngg.png" />
+    <None Include="Resources\logosnake - Copy.png" />
+    <None Include="Resources\logosnake - Copy2.png" />
+    <None Include="Resources\logosnake - Copy1.png" />
+    <None Include="Resources\logosnake.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\snake_gameIcon %282%29.png" />
+    <None Include="Resources\if_facebook_clicked.png" />
+    <None Include="Resources\if_facebook_selected.png" />
+    <None Include="Resources\if_twitter_clicked.png" />
+    <None Include="Resources\if_twitter_selected.png" />
+    <None Include="Resources\ini_facebook_button.png" />
+    <None Include="Resources\ini_twitter_button.png" />
+    <None Include="Resources\locker1.bmp" />
+    <None Include="Resources\locker_ini.png" />
+    <None Include="Resources\locker_selected.png" />
+    <None Include="Resources\mail_ini.png" />
+    <None Include="Resources\mail_selected.png" />
+    <None Include="Resources\username_ini.png" />
+    <None Include="Resources\username_selected.png" />
+    <None Include="Resources\g+_ini.png" />
+    <None Include="Resources\g+_selected.png" />
+    <Content Include="Register.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Register.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
