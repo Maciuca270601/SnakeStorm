@@ -196,6 +196,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\eat bonus.png" />
+    <None Include="Resources\1 snake movement.png" />
     <None Include="Resources\guna.png" />
     <None Include="Resources\Image1.bmp" />
     <None Include="Resources\template music.png" />

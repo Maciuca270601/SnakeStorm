@@ -63,6 +63,26 @@ namespace SnakeStorm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_snake_movement {
+            get {
+                object obj = ResourceManager.GetObject("1 snake movement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eat_bonus {
+            get {
+                object obj = ResourceManager.GetObject("eat bonus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap g__ini {
             get {
                 object obj = ResourceManager.GetObject("g+_ini", resourceCulture);
