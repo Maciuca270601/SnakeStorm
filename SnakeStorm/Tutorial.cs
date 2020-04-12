@@ -17,23 +17,12 @@ namespace SnakeStorm
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Tutorial_Load(object sender, EventArgs e)
         {
-            if (pictureBox2.Visible == true)
-            {
-                pictureBox2.Visible = false;
-                pictureBox1.Visible = true;
-              
-            }
-
-            else if (pictureBox1.Visible==true)
-            {
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = true;
-               
-            }
-            
-
+           
         }
+
+       
     }
 }

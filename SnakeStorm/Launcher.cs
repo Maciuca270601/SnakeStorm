@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 
 namespace SnakeStorm
@@ -14,8 +15,7 @@ namespace SnakeStorm
    
     public partial class Launcher : Form
     {
-        
-      
+
         //snakestorm soundtrack.mp3
         //Sweeper You.mp3
         //Stranger Things.mp3
@@ -69,6 +69,7 @@ namespace SnakeStorm
 
             frmSnake frm = new frmSnake();
             this.Close();
+            firstform.loginplayer.controls.stop();
             
              frm.Show();
             

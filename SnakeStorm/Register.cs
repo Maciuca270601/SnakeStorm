@@ -19,79 +19,53 @@ namespace SnakeStorm
         }
         SqlConnection dbConn = new SqlConnection();
 
-        private void textBox1_Click(object sender, EventArgs e)
+        private void textBox1_Click(object sender, EventArgs e)//username
         {
+            picCreateAccount.Visible = false;
+            picCreateUsername.Visible = true;
             textBox1.Clear();
-            picUser.Image = Properties.Resources.username_selected;
-            panel1.BackColor = Color.SteelBlue;
-            textBox1.ForeColor = Color.SteelBlue;
-
-            picPass.Image = Properties.Resources.locker_ini;
-            panel3.BackColor = Color.WhiteSmoke;
-            textBox2.ForeColor = Color.WhiteSmoke;
-
-            picEmail.Image = Properties.Resources.mail_ini;
-            panel4.BackColor = Color.WhiteSmoke;
-            textBox3.ForeColor = Color.WhiteSmoke;
+            
         }
 
-        private void textBox2_Click(object sender, EventArgs e)
+        private void textBox2_Click(object sender, EventArgs e)//password
         {
+            picCreateUsername.Visible = false;
+            picCreatePassword.Visible = true;
             textBox2.Clear();
             textBox2.PasswordChar = '•';
-            picPass.Image = Properties.Resources.locker_selected;
-            panel3.BackColor = Color.SteelBlue;
-            textBox2.ForeColor = Color.SteelBlue;
-
-            picUser.Image = Properties.Resources.username_ini;
-            panel1.BackColor = Color.WhiteSmoke;
-            textBox1.ForeColor = Color.WhiteSmoke;
-
-            picEmail.Image = Properties.Resources.mail_ini;
-            panel4.BackColor = Color.WhiteSmoke;
-            textBox3.ForeColor = Color.WhiteSmoke;
         }
-
-        private void textBox3_Click(object sender, EventArgs e)
-        {
-            textBox3.Clear();
-            picEmail.Image = Properties.Resources.mail_selected;
-            panel4.BackColor = Color.SteelBlue;
-            textBox3.ForeColor = Color.SteelBlue;
-
-            picPass.Image = Properties.Resources.locker_ini;
-            panel3.BackColor = Color.WhiteSmoke;
-            textBox2.ForeColor = Color.WhiteSmoke;
-
-            picUser.Image = Properties.Resources.username_ini;
-            panel1.BackColor = Color.WhiteSmoke;
-            textBox1.ForeColor = Color.WhiteSmoke;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         
-            this.Close();
            
-        }
 
-        private void button2_Click(object sender, EventArgs e)//inregistrare
+        private void textBox3_Click(object sender, EventArgs e)//email
         {
-            dbConn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO TabelaLogin(Username , Password , Email) VALUES('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", dbConn);
-            cmd.ExecuteNonQuery();
-            label1.Text = "Registered";
-            dbConn.Close();
+            picCreatePassword.Visible = false;
+            picCreateEmail.Visible = true;
+            textBox3.Clear();
+            
         }
 
         private void Register_Load(object sender, EventArgs e)
         {
             dbConn = new SqlConnection(Properties.Settings.Default.dbConnection);
+            picRegister.Parent = picCreateEmail;
+            picRegister.BackColor = Color.Transparent;
+            picClose.Parent = picAccountCreated;
+            picClose.BackColor = Color.Transparent;
+        }
+
+        private void picRegister_Click(object sender, EventArgs e)
+        {
+            dbConn.Open();
+            SqlCommand cmd = new SqlCommand("INSERT INTO TabelaLogin(Username , Password , Email) VALUES('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", dbConn);
+            cmd.ExecuteNonQuery();
+            dbConn.Close();
+            picCreateEmail.Visible = false;
+            picAccountCreated.Visible = true;
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

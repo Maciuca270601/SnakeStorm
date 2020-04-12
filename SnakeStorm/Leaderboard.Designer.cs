@@ -146,7 +146,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SnakeStorm.Properties.Resources.mail_ini;
             this.pictureBox2.Location = new System.Drawing.Point(33, 55);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
@@ -157,10 +156,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SnakeStorm.Properties.Resources.leaderboardpngg8;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(344, 510);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // Leaderboard
@@ -195,8 +194,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -208,5 +205,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

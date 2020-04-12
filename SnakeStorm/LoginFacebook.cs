@@ -30,13 +30,10 @@ namespace SnakeStorm
         private void textBox1_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-            picUser.Image = Properties.Resources.mail_selected;
-            panel1.BackColor = Color.SteelBlue;
-            textBox1.ForeColor = Color.SteelBlue;
+         
 
-            picPass.Image = Properties.Resources.locker_ini;
-            panel3.BackColor = Color.WhiteSmoke;
-            textBox2.ForeColor = Color.WhiteSmoke;
+       
+       
 
       
             
@@ -46,13 +43,7 @@ namespace SnakeStorm
         {
             textBox2.Clear();
             textBox2.PasswordChar = '•';
-            picPass.Image = Properties.Resources.locker_selected;
-            panel3.BackColor = Color.SteelBlue;
-            textBox2.ForeColor = Color.SteelBlue;
-
-            picUser.Image = Properties.Resources.mail_ini;
-            panel1.BackColor = Color.WhiteSmoke;
-            textBox1.ForeColor = Color.WhiteSmoke;
+          
 
            
         }

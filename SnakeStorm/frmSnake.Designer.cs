@@ -34,8 +34,6 @@
             this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.picGameBoard = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picGameBoard)).BeginInit();
@@ -53,12 +51,12 @@
             this.imgList.TransparentColor = System.Drawing.Color.Transparent;
             this.imgList.Images.SetKeyName(0, "apple.png");
             this.imgList.Images.SetKeyName(1, "ytitit.png");
-            this.imgList.Images.SetKeyName(2, "grape.png");
+            this.imgList.Images.SetKeyName(2, "cupcake.png");
             this.imgList.Images.SetKeyName(3, "donut.png");
             this.imgList.Images.SetKeyName(4, "snak.png");
             this.imgList.Images.SetKeyName(5, "headsnake.png");
-            this.imgList.Images.SetKeyName(6, "mansory.png");
-            this.imgList.Images.SetKeyName(7, "icons8-bomb-35.png");
+            this.imgList.Images.SetKeyName(6, "brickwall (2).png");
+            this.imgList.Images.SetKeyName(7, "bomb.png");
             this.imgList.Images.SetKeyName(8, "icons8-microbe-35.png");
             this.imgList.Images.SetKeyName(9, "diamond.png");
             // 
@@ -81,35 +79,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 31);
             this.label4.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("TS Block Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label5.Location = new System.Drawing.Point(153, 242);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(416, 42);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "You have been defeated!\r\n          TRY AGAIN !\r\n";
-            this.label5.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("TS Block Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button1.Location = new System.Drawing.Point(223, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 45);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "See you next time!";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // picGameBoard
             // 
@@ -135,8 +104,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(730, 797);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picGameBoard);
@@ -161,8 +128,6 @@
         private System.Windows.Forms.ImageList imgList;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

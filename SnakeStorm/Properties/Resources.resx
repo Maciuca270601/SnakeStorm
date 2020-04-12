@@ -118,38 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="if_facebook_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_facebook_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eat bonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eat bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="accountcreated1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accountcreated1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="register password selected1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register password selected1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1 snake movement" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1 snake movement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="register username selected1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register username selected1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="username_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\username_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_facebook_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_facebook_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="overlaygame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\overlaygame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="username_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\username_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1 snake movement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1 snake movement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="register no selection2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register no selection2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="locker_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\locker_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createaccount_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createaccount_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_twitter_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_twitter_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="locker_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\locker_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="launcherpng1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\launcherpng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mail_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mail_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,46 +157,34 @@
   <data name="template_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\template music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logosnake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosnake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mail_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mail_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ini_twitter_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ini_twitter_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createaccount_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createaccount_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ini_facebook_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ini_facebook_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="design login menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\design login menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="g+_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\g+_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="snaek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\snaek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createaccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createaccount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="leaderboardpngg8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leaderboardpngg8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mail_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mail_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logosnakestorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logosnakestorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="launcherpng1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\launcherpng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logosnake___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosnake - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createaccount_pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createaccount_pass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="highscorepng1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\highscorepng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_twitter_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_twitter_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="g+_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\g+_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eat bonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eat bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="leaderboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

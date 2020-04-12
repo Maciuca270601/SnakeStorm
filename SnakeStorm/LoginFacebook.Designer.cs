@@ -133,7 +133,7 @@
             // picg
             // 
             this.picg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picg.Image = global::SnakeStorm.Properties.Resources.g__ini;
+        
             this.picg.Location = new System.Drawing.Point(243, 483);
             this.picg.Name = "picg";
             this.picg.Size = new System.Drawing.Size(48, 48);
@@ -143,7 +143,7 @@
             // pictw
             // 
             this.pictw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictw.Image = global::SnakeStorm.Properties.Resources.ini_twitter_button;
+     
             this.pictw.Location = new System.Drawing.Point(158, 483);
             this.pictw.Name = "pictw";
             this.pictw.Size = new System.Drawing.Size(48, 48);
@@ -153,7 +153,7 @@
             // picfb
             // 
             this.picfb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picfb.Image = global::SnakeStorm.Properties.Resources.if_facebook_selected;
+        
             this.picfb.Location = new System.Drawing.Point(71, 483);
             this.picfb.Name = "picfb";
             this.picfb.Size = new System.Drawing.Size(48, 48);
@@ -162,7 +162,7 @@
             // 
             // picPass
             // 
-            this.picPass.Image = global::SnakeStorm.Properties.Resources.locker_ini;
+      
             this.picPass.Location = new System.Drawing.Point(55, 248);
             this.picPass.Name = "picPass";
             this.picPass.Size = new System.Drawing.Size(30, 30);
@@ -171,7 +171,7 @@
             // 
             // picUser
             // 
-            this.picUser.Image = global::SnakeStorm.Properties.Resources.mail_ini;
+         
             this.picUser.Location = new System.Drawing.Point(55, 182);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(30, 30);

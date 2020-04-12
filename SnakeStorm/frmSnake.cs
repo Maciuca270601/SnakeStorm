@@ -21,11 +21,12 @@ namespace SnakeStorm
         int userID = Meniu.id;
         string name_user = Meniu.name;
         int semfb = LoginFacebook.fb;
-        WindowsMediaPlayer player = new WindowsMediaPlayer();
         int sem = 1;// pot fi puse diamante pe mapa
         int numberGems = 0;
+        WindowsMediaPlayer gameplayer = new WindowsMediaPlayer();
         string songlink = Music.settext;
-
+        
+       
       
    
 
@@ -62,7 +63,8 @@ namespace SnakeStorm
         public frmSnake()
         {
             InitializeComponent();
-            player.URL = songlink;
+            gameplayer.URL = songlink;
+
             gameBoardField = new GameBoardFields[17, 17];
             snakeXY = new SnakeCoordinates[256];
             rand = new Random();
@@ -140,10 +142,9 @@ namespace SnakeStorm
             label3.BackColor = Color.Transparent;
             label4.BackColor = Color.Transparent;
            
+            gameplayer.controls.play();
             
-            
-            player.controls.play();
-            
+
 
             direction = Directions.Up;
             snakeLength = 3;
@@ -223,8 +224,10 @@ namespace SnakeStorm
         private void Gameover()
         {
             timer.Enabled = false;
-            label5.Visible = true;
-            button1.Visible = true;
+            gameover lastform = new gameover();
+            lastform.Show();
+            gameplayer.controls.stop();
+
             //if(semfb==0)
             //addCurrentScore();
             

@@ -70,11 +70,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="firstform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firstform.Designer.cs">
+      <DependentUpon>firstform.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSnake.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSnake.Designer.cs">
       <DependentUpon>frmSnake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameover.Designer.cs">
+      <DependentUpon>gameover.cs</DependentUpon>
     </Compile>
     <Compile Include="Highscore.cs">
       <SubType>Form</SubType>
@@ -99,18 +111,6 @@
     </Compile>
     <Compile Include="LoginFacebook.Designer.cs">
       <DependentUpon>LoginFacebook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginGoogle+.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginGoogle+.Designer.cs">
-      <DependentUpon>LoginGoogle+.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginTwitter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginTwitter.Designer.cs">
-      <DependentUpon>LoginTwitter.cs</DependentUpon>
     </Compile>
     <Compile Include="Meniu.cs">
       <SubType>Form</SubType>
@@ -143,8 +143,14 @@
     <Compile Include="Tutorial.Designer.cs">
       <DependentUpon>Tutorial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="firstform.resx">
+      <DependentUpon>firstform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSnake.resx">
       <DependentUpon>frmSnake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameover.resx">
+      <DependentUpon>gameover.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
@@ -154,15 +160,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Leaderboard.resx">
       <DependentUpon>Leaderboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginFacebook.resx">
       <DependentUpon>LoginFacebook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginGoogle+.resx">
-      <DependentUpon>LoginGoogle+.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginTwitter.resx">
-      <DependentUpon>LoginTwitter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meniu.resx">
       <DependentUpon>Meniu.cs</DependentUpon>
@@ -196,19 +197,36 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\leaderboard.png" />
+    <None Include="Resources\leaderboardpngg8.png" />
+    <None Include="Resources\loco.png" />
+    <None Include="Resources\leaderboardpngg81.png" />
+    <None Include="Resources\design menu login.bmp" />
+    <None Include="Resources\accountcreated1.png" />
+    <None Include="Resources\createaccount.png" />
+    <None Include="Resources\createaccount_user.png" />
+    <None Include="Resources\createaccount_pass.png" />
+    <None Include="Resources\createaccount_email.png" />
+    <None Include="Resources\logosnakestorm.png" />
+    <None Include="Resources\register no selection2.png" />
+    <None Include="Resources\register username selected1.png" />
+    <None Include="Resources\register password selected1.png" />
+    <None Include="Resources\register no selection1.png" />
+    <None Include="Resources\register no selection.png" />
+    <None Include="Resources\register username selected.png" />
+    <None Include="Resources\register password selected.png" />
+    <None Include="Resources\scris.png" />
+    <None Include="Resources\design login menu1.png" />
     <None Include="Resources\eat bonus.png" />
     <None Include="Resources\1 snake movement.png" />
     <None Include="Resources\guna.png" />
-    <None Include="Resources\Image1.bmp" />
     <None Include="Resources\template music.png" />
     <None Include="Resources\machine in the walls tboi.png" />
     <None Include="Resources\machine in the walls.png" />
     <None Include="Resources\tboi machine in the walls.png" />
-    <None Include="Resources\ebine.png" />
     <None Include="Resources\sd1.png" />
     <None Include="Resources\sss.png" />
     <None Include="Resources\sd.png" />
-    <None Include="Resources\ccaluma.png" />
     <None Include="Resources\tboiii1.png" />
     <None Include="Resources\tboiii.png" />
     <None Include="Resources\musci2.png" />
@@ -220,52 +238,19 @@
     <None Include="Resources\qwe3.png" />
     <None Include="Resources\qwe2.png" />
     <None Include="Resources\qwe1.png" />
-    <None Include="Resources\gataa.png" />
-    <None Include="Resources\borderdown.png" />
     <None Include="Resources\qwe.png" />
-    <None Include="Resources\cropcut.png" />
-    <None Include="Resources\alex1.png" />
-    <None Include="Resources\hudys - Copy1.png" />
-    <None Include="Resources\cropcut - Copy.png" />
-    <None Include="Resources\hudys1.png" />
-    <None Include="Resources\hudys - Copy.png" />
-    <None Include="Resources\hudys.png" />
     <None Include="Resources\highscorepng1.png" />
-    <None Include="Resources\leaderboardpngg8.png" />
-    <None Include="Resources\leaderboardpngg7.png" />
-    <None Include="Resources\leaderboardpngg6.png" />
-    <None Include="Resources\leaderboardpngg5.png" />
-    <None Include="Resources\leaderboardpngg4.png" />
-    <None Include="Resources\leaderboardpngg3.png" />
-    <None Include="Resources\leaderboardpngg2.png" />
-    <None Include="Resources\leaderboardpngg1.png" />
     <None Include="Resources\launcherpng1.png" />
-    <None Include="Resources\launcherpng.png" />
     <None Include="Resources\snaek.png" />
-    <None Include="Resources\highscorepng.png" />
-    <None Include="Resources\leaderboardpngg.png" />
-    <None Include="Resources\huddpngg.png" />
     <None Include="Resources\logosnake - Copy.png" />
     <None Include="Resources\logosnake - Copy2.png" />
     <None Include="Resources\logosnake - Copy1.png" />
     <None Include="Resources\logosnake.png" />
-    <None Include="Resources\images.jpg" />
     <None Include="Resources\snake_gameIcon %282%29.png" />
-    <None Include="Resources\if_facebook_clicked.png" />
-    <None Include="Resources\if_facebook_selected.png" />
-    <None Include="Resources\if_twitter_clicked.png" />
-    <None Include="Resources\if_twitter_selected.png" />
-    <None Include="Resources\ini_facebook_button.png" />
-    <None Include="Resources\ini_twitter_button.png" />
-    <None Include="Resources\locker1.bmp" />
-    <None Include="Resources\locker_ini.png" />
-    <None Include="Resources\locker_selected.png" />
     <None Include="Resources\mail_ini.png" />
     <None Include="Resources\mail_selected.png" />
     <None Include="Resources\username_ini.png" />
     <None Include="Resources\username_selected.png" />
-    <None Include="Resources\g+_ini.png" />
-    <None Include="Resources\g+_selected.png" />
     <Content Include="Register.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
