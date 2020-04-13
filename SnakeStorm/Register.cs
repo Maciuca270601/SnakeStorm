@@ -49,8 +49,10 @@ namespace SnakeStorm
             dbConn = new SqlConnection(Properties.Settings.Default.dbConnection);
             picRegister.Parent = picCreateEmail;
             picRegister.BackColor = Color.Transparent;
-            picClose.Parent = picAccountCreated;
+            picClose.Parent = picCreateAccount;
             picClose.BackColor = Color.Transparent;
+            picReturn.Parent = picAccountCreated;
+            picReturn.BackColor = Color.Transparent;
           
         }
 
@@ -60,12 +62,19 @@ namespace SnakeStorm
             SqlCommand cmd = new SqlCommand("INSERT INTO TabelaLogin(Username , Password , Email) VALUES('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", dbConn);
             cmd.ExecuteNonQuery();
             dbConn.Close();
+            picRegister.Visible = false;
+            picReturn.Visible = true;
             picCreateEmail.Visible = false;
             picAccountCreated.Visible = true;
         }
 
 
         private void picClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void picReturn_Click(object sender, EventArgs e)
         {
             this.Close();
         }

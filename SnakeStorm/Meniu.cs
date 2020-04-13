@@ -37,7 +37,7 @@ namespace SnakeStorm
            dbConn = new SqlConnection(Properties.Settings.Default.dbConnection);
             picLogin.Parent = pictureBox1;
             picLogin.BackColor = Color.Transparent;
-            picClose.Parent = pictureBox1;
+            picClose.Parent = pictureBox3;
             picClose.BackColor = Color.Transparent;
           
         }

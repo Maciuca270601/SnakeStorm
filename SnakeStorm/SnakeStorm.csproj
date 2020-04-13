@@ -197,6 +197,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\accountcreated2.png" />
     <None Include="Resources\facebook_first1.png" />
     <None Include="Resources\facebook_pass.png" />
     <None Include="Resources\facebook_user.png" />

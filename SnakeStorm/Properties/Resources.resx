@@ -169,6 +169,9 @@
   <data name="mail_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mail_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="facebook_first1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_first1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="createaccount_user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\createaccount_user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +214,7 @@
   <data name="facebook_pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facebook_pass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="facebook_first1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook_first1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="accountcreated2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accountcreated2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
