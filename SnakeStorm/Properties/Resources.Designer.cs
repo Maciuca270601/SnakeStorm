@@ -73,6 +73,16 @@ namespace SnakeStorm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accountcreated {
+            get {
+                object obj = ResourceManager.GetObject("accountcreated", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap accountcreated1 {
             get {
                 object obj = ResourceManager.GetObject("accountcreated1", resourceCulture);
@@ -103,6 +113,16 @@ namespace SnakeStorm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap createaccount_email1 {
+            get {
+                object obj = ResourceManager.GetObject("createaccount_email1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap createaccount_pass {
             get {
                 object obj = ResourceManager.GetObject("createaccount_pass", resourceCulture);
@@ -113,9 +133,39 @@ namespace SnakeStorm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap createaccount_pass1 {
+            get {
+                object obj = ResourceManager.GetObject("createaccount_pass1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap createaccount_user {
             get {
                 object obj = ResourceManager.GetObject("createaccount_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap createaccount_user1 {
+            get {
+                object obj = ResourceManager.GetObject("createaccount_user1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap createaccount1 {
+            get {
+                object obj = ResourceManager.GetObject("createaccount1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +186,46 @@ namespace SnakeStorm.Properties {
         internal static System.Drawing.Bitmap eat_bonus {
             get {
                 object obj = ResourceManager.GetObject("eat bonus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap facebook_first {
+            get {
+                object obj = ResourceManager.GetObject("facebook_first", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap facebook_first1 {
+            get {
+                object obj = ResourceManager.GetObject("facebook_first1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap facebook_pass {
+            get {
+                object obj = ResourceManager.GetObject("facebook_pass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap facebook_user {
+            get {
+                object obj = ResourceManager.GetObject("facebook_user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

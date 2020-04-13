@@ -21,7 +21,7 @@ namespace SnakeStorm
         public firstform()
         {
             InitializeComponent();
-            loginplayer.URL = "ncs.mp3";
+            //loginplayer.URL = "ncs.mp3";
         }
         
         LoginFacebook logfb = new LoginFacebook();

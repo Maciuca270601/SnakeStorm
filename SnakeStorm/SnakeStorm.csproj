@@ -197,6 +197,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\facebook_first1.png" />
+    <None Include="Resources\facebook_pass.png" />
+    <None Include="Resources\facebook_user.png" />
+    <None Include="Resources\facebook_first.png" />
+    <None Include="Resources\createaccount1.png" />
+    <None Include="Resources\createaccount_user1.png" />
+    <None Include="Resources\createaccount_pass1.png" />
+    <None Include="Resources\createaccount_email1.png" />
+    <None Include="Resources\accountcreated.png" />
     <None Include="Resources\leaderboard.png" />
     <None Include="Resources\leaderboardpngg8.png" />
     <None Include="Resources\loco.png" />

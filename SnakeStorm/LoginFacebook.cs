@@ -20,35 +20,28 @@ namespace SnakeStorm
             InitializeComponent();
         }
         Launcher launcher = new Launcher();
-       
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+      
 
         private void textBox1_Click(object sender, EventArgs e)
         {
+            picfbnoselected.Visible = false;
+            picfbemail.Visible = true;
             textBox1.Clear();
-         
-
-       
-       
-
-      
-            
+     
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
+            picfbemail.Visible = false;
+            picfbpass.Visible = true;
             textBox2.Clear();
             textBox2.PasswordChar = '•';
           
-
-           
         }
 
-        private void button1_Click(object sender, EventArgs e)
+     
+
+        private void picLoginfb_Click(object sender, EventArgs e)
         {
             KaizenSoftFBEL.KaizenSoftFBEL fbLogin = new KaizenSoftFBEL.KaizenSoftFBEL();
 
@@ -65,6 +58,19 @@ namespace SnakeStorm
             else
 
             { MessageBox.Show("Login Error!"); }
+        }
+
+        private void LoginFacebook_Load(object sender, EventArgs e)
+        {
+            picClose.Parent = picfbnoselected;
+            picClose.BackColor = Color.Transparent;
+            picLoginfb.Parent = picfbpass;
+            picLoginfb.BackColor = Color.Transparent;
+        }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

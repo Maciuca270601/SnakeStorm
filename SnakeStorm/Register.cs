@@ -51,6 +51,7 @@ namespace SnakeStorm
             picRegister.BackColor = Color.Transparent;
             picClose.Parent = picAccountCreated;
             picClose.BackColor = Color.Transparent;
+          
         }
 
         private void picRegister_Click(object sender, EventArgs e)
@@ -63,7 +64,8 @@ namespace SnakeStorm
             picAccountCreated.Visible = true;
         }
 
-        private void Close_Click(object sender, EventArgs e)
+
+        private void picClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
