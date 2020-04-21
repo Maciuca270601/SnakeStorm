@@ -63,7 +63,7 @@ namespace SnakeStorm
         public frmSnake()
         {
             InitializeComponent();
-           // gameplayer.URL = songlink;
+            gameplayer.URL = songlink;
 
             gameBoardField = new GameBoardFields[17, 17];
             snakeXY = new SnakeCoordinates[256];
@@ -224,9 +224,9 @@ namespace SnakeStorm
         private void Gameover()
         {
             timer.Enabled = false;
-            gameover lastform = new gameover();
-            lastform.Show();
+            picGameOver.Visible = true;
             gameplayer.controls.stop();
+           
 
             //if(semfb==0)
             //addCurrentScore();
@@ -345,8 +345,10 @@ namespace SnakeStorm
             Application.Exit();
         }
 
-
-        
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

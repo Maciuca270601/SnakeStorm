@@ -49,7 +49,7 @@ namespace SnakeStorm
 
             {
                 fb = 1;
-                settext = "facebook";
+                settext = "facebook user";
                 this.TopMost = false;
                 launcher.TopMost = true;
                 launcher.Show();

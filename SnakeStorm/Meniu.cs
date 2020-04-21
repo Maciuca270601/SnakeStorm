@@ -30,6 +30,7 @@ namespace SnakeStorm
         public static int id;
         public static string name;
         Launcher launcher = new Launcher();
+        accountdetails acc = new accountdetails();
         
 
         private void Menu_Load(object sender, EventArgs e)

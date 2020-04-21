@@ -70,6 +70,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accountdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountdetails.Designer.cs">
+      <DependentUpon>accountdetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="firstform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,12 +87,6 @@
     </Compile>
     <Compile Include="frmSnake.Designer.cs">
       <DependentUpon>frmSnake.cs</DependentUpon>
-    </Compile>
-    <Compile Include="gameover.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="gameover.Designer.cs">
-      <DependentUpon>gameover.cs</DependentUpon>
     </Compile>
     <Compile Include="Highscore.cs">
       <SubType>Form</SubType>
@@ -143,14 +143,14 @@
     <Compile Include="Tutorial.Designer.cs">
       <DependentUpon>Tutorial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="accountdetails.resx">
+      <DependentUpon>accountdetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="firstform.resx">
       <DependentUpon>firstform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSnake.resx">
       <DependentUpon>frmSnake.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="gameover.resx">
-      <DependentUpon>gameover.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
@@ -197,6 +197,50 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bubble5.png" />
+    <None Include="Resources\bubble4.png" />
+    <None Include="Resources\bubble3.png" />
+    <None Include="Resources\bubble2.png" />
+    <None Include="Resources\bubble11.png" />
+    <None Include="Resources\bubble1.png" />
+    <None Include="Resources\tutorialselected1.png" />
+    <None Include="Resources\musicselected1.png" />
+    <None Include="Resources\highscoreselected1.png" />
+    <None Include="Resources\leaderboardsselected1.png" />
+    <None Include="Resources\launchgameselected1.png" />
+    <None Include="Resources\tutorialbutton1.png" />
+    <None Include="Resources\musicbutton1.png" />
+    <None Include="Resources\highscorebutton1.png" />
+    <None Include="Resources\leaderboardsbutton1.png" />
+    <None Include="Resources\launchgamebutton1.png" />
+    <None Include="Resources\viewcopy2.png" />
+    <None Include="Resources\viewcopy.png" />
+    <None Include="Resources\facebook_first2.png" />
+    <None Include="Resources\facebook_user1.png" />
+    <None Include="Resources\facebook_pass1.png" />
+    <None Include="Resources\rama4.png" />
+    <None Include="Resources\overlay.png" />
+    <None Include="Resources\rama3.png" />
+    <None Include="Resources\rama2.png" />
+    <None Include="Resources\rama1.png" />
+    <None Include="Resources\rama.png" />
+    <None Include="Resources\sens2.png" />
+    <None Include="Resources\sens1.png" />
+    <None Include="Resources\sens.png" />
+    <None Include="Resources\userdetails.png" />
+    <None Include="Resources\a new view1.png" />
+    <None Include="Resources\a new view.png" />
+    <None Include="Resources\tutorialselected.png" />
+    <None Include="Resources\musicselected.png" />
+    <None Include="Resources\leaderboardsselected.png" />
+    <None Include="Resources\launchgameselected.png" />
+    <None Include="Resources\highscoreselected.png" />
+    <None Include="Resources\tutorialbutton.png" />
+    <None Include="Resources\musicbutton.png" />
+    <None Include="Resources\highscorebutton.png" />
+    <None Include="Resources\leaderboardsbutton.png" />
+    <None Include="Resources\launchgamebutton.png" />
+    <None Include="Resources\launcherdesign.png" />
     <None Include="Resources\accountcreated2.png" />
     <None Include="Resources\facebook_first1.png" />
     <None Include="Resources\facebook_pass.png" />

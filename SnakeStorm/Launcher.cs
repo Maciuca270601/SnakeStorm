@@ -31,162 +31,111 @@ namespace SnakeStorm
 
         private void Launcher_Load(object sender, EventArgs e)
         {
-            label6.Text = Meniu.settext;
-            if (Meniu.settext == "")
-                label6.Text = LoginFacebook.settext;
-            panel1.Parent = pictureBox3;
-            panel1.BackColor = Color.Transparent;
-            panel2.Parent = pictureBox3;
-            panel2.BackColor = Color.Transparent;
-            panel3.Parent = pictureBox3;
-            panel3.BackColor = Color.Transparent;
-            panel4.Parent = pictureBox3;
-            panel4.BackColor = Color.Transparent;
-            panel5.Parent = pictureBox3;
-            panel5.BackColor = Color.Transparent;
-            
- 
-            
-        }
+          
+            picuser.Parent = pictureBox3;
+            picuser.BackColor = Color.Transparent;
+            picClose.Parent = pictureBox3;
+            picClose.BackColor = Color.Transparent;
+           
 
-        private void label1_Click(object sender, EventArgs e)//launchGame
-        {
-            panel1.BackColor = Color.FromArgb(44, 152, 224);
-            label1.ForeColor = Color.WhiteSmoke;
-            
-            panel2.Parent = pictureBox3;
-            panel2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.FromArgb(110, 110, 110);
-            panel3.Parent = pictureBox3;
-            panel3.BackColor = Color.Transparent;
-            label3.ForeColor = Color.FromArgb(110, 110, 110);
-            panel4.Parent = pictureBox3;
-            panel4.BackColor = Color.Transparent;
-            label4.ForeColor = Color.FromArgb(110, 110, 110);
-            panel5.Parent = pictureBox3;
-            panel5.BackColor = Color.Transparent;
-            label5.ForeColor = Color.FromArgb(110, 110, 110);
 
-            frmSnake frm = new frmSnake();
-            this.Close();
-            firstform.loginplayer.controls.stop();
-            
-             frm.Show();
-            
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)//highscore
-        {
-            panel3.BackColor = Color.FromArgb(254, 208, 114);
-            label3.ForeColor = Color.White;
-
-            panel1.Parent = pictureBox3;
-            panel1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.FromArgb(110, 110, 110);
-            panel2.Parent = pictureBox3;
-            panel2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.FromArgb(110, 110, 110);
-            panel4.Parent = pictureBox3;
-            panel4.BackColor = Color.Transparent;
-            label4.ForeColor = Color.FromArgb(110, 110, 110);
-            panel5.Parent = pictureBox3;
-            panel5.BackColor = Color.Transparent;
-            label5.ForeColor = Color.FromArgb(110, 110, 110);
-
-            Highscore highsc = new Highscore();
-            highsc.TopLevel = false;
-            highsc.FormBorderStyle = FormBorderStyle.None;
-            highsc.WindowState = FormWindowState.Maximized;
-            panel6.Controls.Add(highsc);
-            highsc.Show();
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)//music
-        {
-            panel4.BackColor = Color.FromArgb(27, 184, 155);
-            label4.ForeColor = Color.White;
-            
-            panel1.Parent = pictureBox3;
-            panel1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.FromArgb(110, 110, 110);
-            panel2.Parent = pictureBox3;
-            panel2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.FromArgb(110, 110, 110);
-            panel3.Parent = pictureBox3;
-            panel3.BackColor = Color.Transparent;
-            label3.ForeColor = Color.FromArgb(110, 110, 110);
-            panel5.Parent = pictureBox3;
-            panel5.BackColor = Color.Transparent;
-            label5.ForeColor = Color.FromArgb(110, 110, 110);
-
-            Music songmeniu = new Music();
-            songmeniu.TopLevel = false;
-            songmeniu.FormBorderStyle = FormBorderStyle.None;
-            songmeniu.WindowState = FormWindowState.Maximized;
-            panel6.Controls.Add(songmeniu);
-            songmeniu.Show();
-            
-        }
-
-        private void label5_Click(object sender, EventArgs e)//tutorial
-        {
-            panel5.BackColor = Color.FromArgb(27, 184, 155);
-            label5.ForeColor = Color.White;
-            
-            panel2.Parent = pictureBox3;
-            panel2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.FromArgb(110, 110, 110);
-            panel3.Parent = pictureBox3;
-            panel3.BackColor = Color.Transparent;
-            label3.ForeColor = Color.FromArgb(110, 110, 110);
-            panel1.Parent = pictureBox3;
-            panel1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.FromArgb(110, 110, 110);
-            panel4.Parent = pictureBox3;
-            panel4.BackColor = Color.Transparent;
-            label4.ForeColor = Color.FromArgb(110, 110, 110);
-
-            Tutorial tut = new Tutorial();
-            tut.TopLevel = false;
-            tut.FormBorderStyle = FormBorderStyle.None;
-            tut.WindowState = FormWindowState.Maximized;
-            panel6.Controls.Add(tut);
-            tut.Show();
-            
         }
 
         
 
-        private void label2_Click(object sender, EventArgs e)//leaderboards
+        private void picLaunchgame_Click(object sender, EventArgs e)//Launch game
         {
-            panel2.BackColor = Color.FromArgb(254, 208, 114);
-            label2.ForeColor = Color.White;
+            frmSnake frm = new frmSnake();
+            this.Close();
+            firstform.loginplayer.controls.stop();
 
-            panel1.Parent = pictureBox3;
-            panel1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.FromArgb(110, 110, 110);
-            panel3.Parent = pictureBox3;
-            panel3.BackColor = Color.Transparent;
-            label3.ForeColor = Color.FromArgb(110, 110, 110);
-            panel4.Parent = pictureBox3;
-            panel4.BackColor = Color.Transparent;
-            label4.ForeColor = Color.FromArgb(110, 110, 110);
-            panel5.Parent = pictureBox3;
-            panel5.BackColor = Color.Transparent;
-            label5.ForeColor = Color.FromArgb(110, 110, 110);
+            frm.Show();
+        }
+
+        private void picLeaderboards_Click(object sender, EventArgs e)//Leaderboards
+        {
+            picLeaderboards.Image = Properties.Resources.leaderboardsselected1;
+            picHighscore.Image = Properties.Resources.highscorebutton1;
+            picMusic.Image = Properties.Resources.musicbutton1;
+            picTutorial.Image = Properties.Resources.tutorialbutton1;
+            picPageChanger.Image = Properties.Resources.bubble2;
 
             Leaderboard leaderb = new Leaderboard();
             leaderb.TopLevel = false;
             leaderb.FormBorderStyle = FormBorderStyle.None;
             leaderb.WindowState = FormWindowState.Maximized;
-            panel6.Controls.Add(leaderb);
+            picpanel.Controls.Add(leaderb);
             leaderb.Show();
         }
-        private void label7_Click(object sender, EventArgs e)
+
+        private void picHighscore_Click(object sender, EventArgs e)//Highscore
+        {
+            picLeaderboards.Image = Properties.Resources.leaderboardsbutton1;
+            picHighscore.Image = Properties.Resources.highscoreselected1;
+            picMusic.Image = Properties.Resources.musicbutton1;
+            picTutorial.Image = Properties.Resources.tutorialbutton1;
+            picPageChanger.Image = Properties.Resources.bubble3;
+
+            Highscore highsc = new Highscore();
+            highsc.TopLevel = false;
+            highsc.FormBorderStyle = FormBorderStyle.None;
+            highsc.WindowState = FormWindowState.Maximized;
+            picpanel.Controls.Add(highsc);
+            highsc.Show();
+        }
+
+        private void picMusic_Click(object sender, EventArgs e)//Music
+        {
+            picLeaderboards.Image = Properties.Resources.leaderboardsbutton1;
+            picHighscore.Image = Properties.Resources.highscorebutton1;
+            picMusic.Image = Properties.Resources.musicselected1;
+            picTutorial.Image = Properties.Resources.tutorialbutton1;
+            picPageChanger.Image = Properties.Resources.bubble4;
+
+            Music songmeniu = new Music();
+            songmeniu.TopLevel = false;
+            songmeniu.FormBorderStyle = FormBorderStyle.None;
+            songmeniu.WindowState = FormWindowState.Maximized;
+            picpanel.Controls.Add(songmeniu);
+            songmeniu.Show();
+        }
+
+        private void picTutorial_Click(object sender, EventArgs e)//Tutorial
+        {
+            picLeaderboards.Image = Properties.Resources.leaderboardsbutton1;
+            picHighscore.Image = Properties.Resources.highscorebutton1;
+            picMusic.Image = Properties.Resources.musicbutton1;
+            picTutorial.Image = Properties.Resources.tutorialselected1;
+            picPageChanger.Image = Properties.Resources.bubble5;
+
+            Tutorial tut = new Tutorial();
+            tut.TopLevel = false;
+            tut.FormBorderStyle = FormBorderStyle.None;
+            tut.WindowState = FormWindowState.Maximized;
+            picpanel.Controls.Add(tut);
+            tut.Show();
+        }
+
+        private void picuser_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = true;
+            accountdetails acc = new accountdetails();
+            acc.TopLevel = false;
+            acc.FormBorderStyle = FormBorderStyle.None;
+            acc.WindowState = FormWindowState.Maximized;
+            pictureBox1.Controls.Add(acc);
+            acc.Show();
+            
+          
+
+        }
+
+        private void picClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+       
     }
 }

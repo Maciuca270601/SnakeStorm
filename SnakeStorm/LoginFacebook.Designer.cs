@@ -30,18 +30,18 @@
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.picLoginfb = new System.Windows.Forms.PictureBox();
             this.picfbnoselected = new System.Windows.Forms.PictureBox();
             this.picfbemail = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picfbpass = new System.Windows.Forms.PictureBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLoginfb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbnoselected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbemail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbpass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
@@ -70,6 +70,15 @@
             this.textBox1.Text = "Email";
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
+            // picClose
+            // 
+            this.picClose.Location = new System.Drawing.Point(340, 13);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(18, 18);
+            this.picClose.TabIndex = 34;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
             // picLoginfb
             // 
             this.picLoginfb.Location = new System.Drawing.Point(16, 228);
@@ -81,7 +90,7 @@
             // 
             // picfbnoselected
             // 
-            this.picfbnoselected.Image = global::SnakeStorm.Properties.Resources.facebook_first1;
+            this.picfbnoselected.Image = global::SnakeStorm.Properties.Resources.facebook_first2;
             this.picfbnoselected.Location = new System.Drawing.Point(0, 0);
             this.picfbnoselected.Name = "picfbnoselected";
             this.picfbnoselected.Size = new System.Drawing.Size(370, 549);
@@ -90,7 +99,7 @@
             // 
             // picfbemail
             // 
-            this.picfbemail.Image = global::SnakeStorm.Properties.Resources.facebook_user;
+            this.picfbemail.Image = global::SnakeStorm.Properties.Resources.facebook_user1;
             this.picfbemail.Location = new System.Drawing.Point(0, 0);
             this.picfbemail.Name = "picfbemail";
             this.picfbemail.Size = new System.Drawing.Size(370, 549);
@@ -107,21 +116,12 @@
             // 
             // picfbpass
             // 
-            this.picfbpass.Image = global::SnakeStorm.Properties.Resources.facebook_pass;
+            this.picfbpass.Image = global::SnakeStorm.Properties.Resources.facebook_pass1;
             this.picfbpass.Location = new System.Drawing.Point(0, 0);
             this.picfbpass.Name = "picfbpass";
             this.picfbpass.Size = new System.Drawing.Size(370, 549);
             this.picfbpass.TabIndex = 28;
             this.picfbpass.TabStop = false;
-            // 
-            // picClose
-            // 
-            this.picClose.Location = new System.Drawing.Point(340, 13);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(18, 18);
-            this.picClose.TabIndex = 34;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // LoginFacebook
             // 
@@ -144,12 +144,12 @@
             this.Text = "LoginFacebook";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginFacebook_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLoginfb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbnoselected)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbemail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picfbpass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
