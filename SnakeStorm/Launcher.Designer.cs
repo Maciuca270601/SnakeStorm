@@ -140,10 +140,10 @@
             // 
             // picpanel
             // 
-            this.picpanel.Image = global::SnakeStorm.Properties.Resources.accountcreated2;
-            this.picpanel.Location = new System.Drawing.Point(841, 78);
+            this.picpanel.Image = global::SnakeStorm.Properties.Resources.firstlauncher1;
+            this.picpanel.Location = new System.Drawing.Point(841, 79);
             this.picpanel.Name = "picpanel";
-            this.picpanel.Size = new System.Drawing.Size(344, 510);
+            this.picpanel.Size = new System.Drawing.Size(340, 500);
             this.picpanel.TabIndex = 0;
             this.picpanel.TabStop = false;
             // 

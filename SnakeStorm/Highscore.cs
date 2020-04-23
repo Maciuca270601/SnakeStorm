@@ -27,6 +27,7 @@ namespace SnakeStorm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            pictureBox2.Image = Properties.Resources.button_selected;
             dbConn.Open();
             string query = "SELECT username,score FROM TabelaScore WHERE id_user='" + userID + "'" + "ORDER BY score DESC";
             da = new SqlDataAdapter(query, dbConn);
@@ -94,5 +95,7 @@ namespace SnakeStorm
             label10.Parent = pictureBox1;
             label10.BackColor = Color.Transparent;
         }
+
+     
     }
 }

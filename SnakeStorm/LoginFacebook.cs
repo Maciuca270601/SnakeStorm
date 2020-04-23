@@ -26,6 +26,9 @@ namespace SnakeStorm
         {
             picfbnoselected.Visible = false;
             picfbemail.Visible = true;
+            picfbpass.Visible = false;
+            picClose.Parent = picfbemail;
+            picClose.BackColor = Color.Transparent;
             textBox1.Clear();
      
         }
@@ -34,6 +37,9 @@ namespace SnakeStorm
         {
             picfbemail.Visible = false;
             picfbpass.Visible = true;
+            picfbnoselected.Visible = false;
+            picClose.Parent = picfbpass;
+            picClose.BackColor = Color.Transparent;
             textBox2.Clear();
             textBox2.PasswordChar = '•';
           

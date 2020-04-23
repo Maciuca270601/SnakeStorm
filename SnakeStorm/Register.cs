@@ -23,6 +23,11 @@ namespace SnakeStorm
         {
             picCreateAccount.Visible = false;
             picCreateUsername.Visible = true;
+            picAccountCreated.Visible = false;
+            picCreateEmail.Visible = false;
+            picCreatePassword.Visible = false;
+            picClose.Parent = picCreateUsername;
+            picClose.BackColor = Color.Transparent;
             textBox1.Clear();
             
         }
@@ -31,6 +36,11 @@ namespace SnakeStorm
         {
             picCreateUsername.Visible = false;
             picCreatePassword.Visible = true;
+            picCreateAccount.Visible = false;
+            picCreateEmail.Visible = false;
+            picAccountCreated.Visible = false;
+            picClose.Parent = picCreatePassword;
+            picClose.BackColor = Color.Transparent;
             textBox2.Clear();
             textBox2.PasswordChar = '•';
         }
@@ -40,6 +50,11 @@ namespace SnakeStorm
         {
             picCreatePassword.Visible = false;
             picCreateEmail.Visible = true;
+            picCreateUsername.Visible = false;
+            picCreateAccount.Visible = false;
+            picAccountCreated.Visible = false;
+            picClose.Parent = picCreateEmail;
+            picClose.BackColor = Color.Transparent;
             textBox3.Clear();
             
         }
@@ -64,7 +79,10 @@ namespace SnakeStorm
             dbConn.Close();
             picRegister.Visible = false;
             picReturn.Visible = true;
+            picCreateAccount.Visible = false;
+            picCreateUsername.Visible = false;
             picCreateEmail.Visible = false;
+            picCreatePassword.Visible = false;
             picAccountCreated.Visible = true;
         }
 

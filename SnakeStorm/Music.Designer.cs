@@ -28,64 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picture1 = new System.Windows.Forms.PictureBox();
-            this.picture2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
+            this.picPrevious = new System.Windows.Forms.PictureBox();
+            this.picNext = new System.Windows.Forms.PictureBox();
+            this.picThreeHeadedSnake = new System.Windows.Forms.PictureBox();
+            this.picBrokenLove = new System.Windows.Forms.PictureBox();
+            this.picContact = new System.Windows.Forms.PictureBox();
+            this.picPickUp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPrevious)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThreeHeadedSnake)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrokenLove)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picContact)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPickUp)).BeginInit();
             this.SuspendLayout();
             // 
-            // picture1
+            // picPrevious
             // 
-            this.picture1.Image = global::SnakeStorm.Properties.Resources.template_music;
-            this.picture1.Location = new System.Drawing.Point(0, 0);
-            this.picture1.Name = "picture1";
-            this.picture1.Size = new System.Drawing.Size(344, 510);
-            this.picture1.TabIndex = 1;
-            this.picture1.TabStop = false;
+            this.picPrevious.Image = global::SnakeStorm.Properties.Resources.previous1;
+            this.picPrevious.Location = new System.Drawing.Point(56, 326);
+            this.picPrevious.Name = "picPrevious";
+            this.picPrevious.Size = new System.Drawing.Size(24, 24);
+            this.picPrevious.TabIndex = 8;
+            this.picPrevious.TabStop = false;
+            this.picPrevious.Click += new System.EventHandler(this.picPrevious_Click);
             // 
-            // picture2
+            // picNext
             // 
-            this.picture2.Image = global::SnakeStorm.Properties.Resources.guna;
-            this.picture2.Location = new System.Drawing.Point(0, 0);
-            this.picture2.Name = "picture2";
-            this.picture2.Size = new System.Drawing.Size(344, 510);
-            this.picture2.TabIndex = 3;
-            this.picture2.TabStop = false;
+            this.picNext.Image = global::SnakeStorm.Properties.Resources.next1;
+            this.picNext.Location = new System.Drawing.Point(266, 326);
+            this.picNext.Name = "picNext";
+            this.picNext.Size = new System.Drawing.Size(24, 24);
+            this.picNext.TabIndex = 5;
+            this.picNext.TabStop = false;
+            this.picNext.Click += new System.EventHandler(this.picNext_Click);
             // 
-            // button1
+            // picThreeHeadedSnake
             // 
-            this.button1.Location = new System.Drawing.Point(204, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 26);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.picThreeHeadedSnake.Image = global::SnakeStorm.Properties.Resources.guna3;
+            this.picThreeHeadedSnake.Location = new System.Drawing.Point(0, 0);
+            this.picThreeHeadedSnake.Name = "picThreeHeadedSnake";
+            this.picThreeHeadedSnake.Size = new System.Drawing.Size(340, 500);
+            this.picThreeHeadedSnake.TabIndex = 1;
+            this.picThreeHeadedSnake.TabStop = false;
+            // 
+            // picBrokenLove
+            // 
+            this.picBrokenLove.Image = global::SnakeStorm.Properties.Resources.template_music3;
+            this.picBrokenLove.Location = new System.Drawing.Point(0, 0);
+            this.picBrokenLove.Name = "picBrokenLove";
+            this.picBrokenLove.Size = new System.Drawing.Size(340, 500);
+            this.picBrokenLove.TabIndex = 3;
+            this.picBrokenLove.TabStop = false;
+            this.picBrokenLove.Visible = false;
+            // 
+            // picContact
+            // 
+            this.picContact.Image = global::SnakeStorm.Properties.Resources.tyga;
+            this.picContact.Location = new System.Drawing.Point(0, 0);
+            this.picContact.Name = "picContact";
+            this.picContact.Size = new System.Drawing.Size(340, 500);
+            this.picContact.TabIndex = 6;
+            this.picContact.TabStop = false;
+            this.picContact.Visible = false;
+            // 
+            // picPickUp
+            // 
+            this.picPickUp.Image = global::SnakeStorm.Properties.Resources.dababy;
+            this.picPickUp.Location = new System.Drawing.Point(0, 0);
+            this.picPickUp.Name = "picPickUp";
+            this.picPickUp.Size = new System.Drawing.Size(340, 500);
+            this.picPickUp.TabIndex = 7;
+            this.picPickUp.TabStop = false;
+            this.picPickUp.Visible = false;
             // 
             // Music
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(344, 510);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.picture1);
-            this.Controls.Add(this.picture2);
+            this.ClientSize = new System.Drawing.Size(340, 500);
+            this.Controls.Add(this.picPrevious);
+            this.Controls.Add(this.picNext);
+            this.Controls.Add(this.picThreeHeadedSnake);
+            this.Controls.Add(this.picBrokenLove);
+            this.Controls.Add(this.picContact);
+            this.Controls.Add(this.picPickUp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Music";
             this.Text = "Music";
             this.Load += new System.EventHandler(this.Music_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPrevious)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThreeHeadedSnake)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrokenLove)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picContact)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPickUp)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picture1;
-        private System.Windows.Forms.PictureBox picture2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picThreeHeadedSnake;
+        private System.Windows.Forms.PictureBox picBrokenLove;
+        private System.Windows.Forms.PictureBox picNext;
+        private System.Windows.Forms.PictureBox picContact;
+        private System.Windows.Forms.PictureBox picPickUp;
+        private System.Windows.Forms.PictureBox picPrevious;
     }
 }

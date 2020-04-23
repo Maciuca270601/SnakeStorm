@@ -228,8 +228,8 @@ namespace SnakeStorm
             gameplayer.controls.stop();
            
 
-            //if(semfb==0)
-            //addCurrentScore();
+            if(semfb==0)
+            addCurrentScore();
             
         
         }
@@ -349,6 +349,8 @@ namespace SnakeStorm
         {
             Application.Exit();
         }
+
+       
     }
 }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFacebook));
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.picClose = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("BRUSHMOSH! Demo", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(34, 181);
+            this.textBox2.Location = new System.Drawing.Point(34, 159);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(180, 29);
             this.textBox2.TabIndex = 21;
@@ -63,7 +64,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("BRUSHMOSH! Demo", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(34, 126);
+            this.textBox1.Location = new System.Drawing.Point(34, 102);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 29);
             this.textBox1.TabIndex = 17;
@@ -81,7 +82,7 @@
             // 
             // picLoginfb
             // 
-            this.picLoginfb.Location = new System.Drawing.Point(16, 228);
+            this.picLoginfb.Location = new System.Drawing.Point(16, 206);
             this.picLoginfb.Name = "picLoginfb";
             this.picLoginfb.Size = new System.Drawing.Size(153, 41);
             this.picLoginfb.TabIndex = 29;
@@ -90,7 +91,7 @@
             // 
             // picfbnoselected
             // 
-            this.picfbnoselected.Image = global::SnakeStorm.Properties.Resources.facebook_first2;
+            this.picfbnoselected.Image = global::SnakeStorm.Properties.Resources.facebook_first;
             this.picfbnoselected.Location = new System.Drawing.Point(0, 0);
             this.picfbnoselected.Name = "picfbnoselected";
             this.picfbnoselected.Size = new System.Drawing.Size(370, 549);
@@ -99,7 +100,7 @@
             // 
             // picfbemail
             // 
-            this.picfbemail.Image = global::SnakeStorm.Properties.Resources.facebook_user1;
+            this.picfbemail.Image = ((System.Drawing.Image)(resources.GetObject("picfbemail.Image")));
             this.picfbemail.Location = new System.Drawing.Point(0, 0);
             this.picfbemail.Name = "picfbemail";
             this.picfbemail.Size = new System.Drawing.Size(370, 549);
@@ -116,7 +117,7 @@
             // 
             // picfbpass
             // 
-            this.picfbpass.Image = global::SnakeStorm.Properties.Resources.facebook_pass1;
+            this.picfbpass.Image = ((System.Drawing.Image)(resources.GetObject("picfbpass.Image")));
             this.picfbpass.Location = new System.Drawing.Point(0, 0);
             this.picfbpass.Name = "picfbpass";
             this.picfbpass.Size = new System.Drawing.Size(370, 549);

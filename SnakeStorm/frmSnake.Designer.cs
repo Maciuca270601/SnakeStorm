@@ -51,22 +51,22 @@
             // 
             this.imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgList.ImageStream")));
             this.imgList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgList.Images.SetKeyName(0, "apple.png");
-            this.imgList.Images.SetKeyName(1, "ytitit.png");
-            this.imgList.Images.SetKeyName(2, "cupcake.png");
-            this.imgList.Images.SetKeyName(3, "donut.png");
+            this.imgList.Images.SetKeyName(0, "melon.png");
+            this.imgList.Images.SetKeyName(1, "apple.png");
+            this.imgList.Images.SetKeyName(2, "donut.png");
+            this.imgList.Images.SetKeyName(3, "cupcake.png");
             this.imgList.Images.SetKeyName(4, "snak.png");
             this.imgList.Images.SetKeyName(5, "headsnake.png");
             this.imgList.Images.SetKeyName(6, "wall.png");
             this.imgList.Images.SetKeyName(7, "bomb.png");
-            this.imgList.Images.SetKeyName(8, "icons8-microbe-35.png");
-            this.imgList.Images.SetKeyName(9, "diamond.png");
+            this.imgList.Images.SetKeyName(8, "virus.png");
+            this.imgList.Images.SetKeyName(9, "diamonds.png");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Plateia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(220, 734);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 45);
@@ -77,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Plateia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(547, 734);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 45);
@@ -105,7 +105,7 @@
             // picGameOver
             // 
             this.picGameOver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.picGameOver.Image = global::SnakeStorm.Properties.Resources.launcherpng1;
+            this.picGameOver.Image = global::SnakeStorm.Properties.Resources.gameover;
             this.picGameOver.Location = new System.Drawing.Point(108, 96);
             this.picGameOver.Name = "picGameOver";
             this.picGameOver.Size = new System.Drawing.Size(560, 560);

@@ -52,6 +52,7 @@ namespace SnakeStorm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            pictureBox2.Image = Properties.Resources.button_selected;
             dbConn.Open();
             string query = "SELECT username,score FROM TabelaScore ORDER BY score DESC";
             da = new SqlDataAdapter(query, dbConn);

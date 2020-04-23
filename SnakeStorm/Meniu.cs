@@ -46,23 +46,25 @@ namespace SnakeStorm
         private void textBox1_Click(object sender, EventArgs e)
         {
             pictureBox3.Visible = false;
+            pictureBox1.Visible = false;
             pictureBox2.Visible = true;
+            picClose.Parent = pictureBox2;
+            picClose.BackColor = Color.Transparent;
             Username.Clear();
              
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox1.Visible = true;
+            picClose.Parent = pictureBox1;
+            picClose.BackColor = Color.Transparent;
             Password.Clear();
             Password.PasswordChar = '•';
-            pictureBox2.Visible = false;
-            pictureBox1.Visible = true;
-        
             
-
           
-
         }
 
         private void picLogin_Click(object sender, EventArgs e)

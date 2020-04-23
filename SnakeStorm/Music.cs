@@ -21,22 +21,61 @@ namespace SnakeStorm
 
         private void Music_Load(object sender, EventArgs e)
         {
-
+            settext = "ThreeHeadedSnake.mp3";
+        }
+        private void picNext_Click(object sender, EventArgs e)
+        {
+            if (picThreeHeadedSnake.Visible == true)
+            {
+                picBrokenLove.Visible = true;
+                picThreeHeadedSnake.Visible = false;
+                settext = "BrokenLove.mp3";
+            }
+            else if (picBrokenLove.Visible == true)
+            {
+                picContact.Visible = true;
+                picBrokenLove.Visible = false;
+                settext = "Contact.mp3";
+            }
+            else if (picContact.Visible == true)
+            {
+                picPickUp.Visible = true;
+                picContact.Visible = false;
+                settext = "PickItUp.mp3";
+            }
+            else if (picPickUp.Visible == true)
+            {
+                picThreeHeadedSnake.Visible = true;
+                picPickUp.Visible = false;
+                settext = "ThreeHeadedSnake.mp3";
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void picPrevious_Click(object sender, EventArgs e)
         {
-            if(picture1.Visible == true)
+            if (picThreeHeadedSnake.Visible == true)
             {
-                picture2.Visible = true;
-                picture1.Visible = false;
-                settext = "gunna.mp3";
+                picPickUp.Visible = true;
+                picThreeHeadedSnake.Visible = false;
+                settext = "PickItUp.mp3";
             }
-            else if(picture2.Visible ==true)
+            else if (picPickUp.Visible == true)
             {
-                picture1.Visible = true;
-                picture2.Visible = false;
-                settext = "snakestorm soundtrack.mp3";
+                picContact.Visible = true;
+                picPickUp.Visible = false;
+                settext = "Contact.mp3";
+            }
+            else if (picContact.Visible == true)
+            {
+                picBrokenLove.Visible = true;
+                picContact.Visible = false;
+                settext = "BrokenLove.mp3";
+            }
+            else if (picBrokenLove.Visible == true)
+            {
+                picThreeHeadedSnake.Visible = true;
+                picBrokenLove.Visible = false;
+                settext = "ThreeHeadedSnake.mp3";
             }
         }
     }

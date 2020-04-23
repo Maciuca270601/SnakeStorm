@@ -31,6 +31,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.picReturn = new System.Windows.Forms.PictureBox();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.picRegister = new System.Windows.Forms.PictureBox();
             this.picCreateAccount = new System.Windows.Forms.PictureBox();
@@ -38,7 +39,7 @@
             this.picCreatePassword = new System.Windows.Forms.PictureBox();
             this.picCreateEmail = new System.Windows.Forms.PictureBox();
             this.picAccountCreated = new System.Windows.Forms.PictureBox();
-            this.picReturn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateAccount)).BeginInit();
@@ -46,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCreatePassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAccountCreated)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -88,6 +88,16 @@
             this.textBox1.TabIndex = 18;
             this.textBox1.Text = "Username";
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // picReturn
+            // 
+            this.picReturn.Location = new System.Drawing.Point(222, 245);
+            this.picReturn.Name = "picReturn";
+            this.picReturn.Size = new System.Drawing.Size(43, 12);
+            this.picReturn.TabIndex = 35;
+            this.picReturn.TabStop = false;
+            this.picReturn.Visible = false;
+            this.picReturn.Click += new System.EventHandler(this.picReturn_Click);
             // 
             // picClose
             // 
@@ -145,22 +155,12 @@
             // 
             // picAccountCreated
             // 
-            this.picAccountCreated.Image = global::SnakeStorm.Properties.Resources.accountcreated2;
+            this.picAccountCreated.Image = global::SnakeStorm.Properties.Resources.accountcreated;
             this.picAccountCreated.Location = new System.Drawing.Point(0, 0);
             this.picAccountCreated.Name = "picAccountCreated";
             this.picAccountCreated.Size = new System.Drawing.Size(370, 549);
             this.picAccountCreated.TabIndex = 28;
             this.picAccountCreated.TabStop = false;
-            // 
-            // picReturn
-            // 
-            this.picReturn.Location = new System.Drawing.Point(222, 245);
-            this.picReturn.Name = "picReturn";
-            this.picReturn.Size = new System.Drawing.Size(43, 12);
-            this.picReturn.TabIndex = 35;
-            this.picReturn.TabStop = false;
-            this.picReturn.Visible = false;
-            this.picReturn.Click += new System.EventHandler(this.picReturn_Click);
             // 
             // Register
             // 
@@ -185,6 +185,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRegister)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateAccount)).EndInit();
@@ -192,7 +193,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCreatePassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAccountCreated)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
