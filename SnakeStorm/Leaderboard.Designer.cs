@@ -38,9 +38,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picShow = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,15 +144,15 @@
             this.label10.Size = new System.Drawing.Size(0, 24);
             this.label10.TabIndex = 10;
             // 
-            // pictureBox2
+            // picShow
             // 
-            this.pictureBox2.Image = global::SnakeStorm.Properties.Resources.button_not_selected;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 21);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picShow.Image = global::SnakeStorm.Properties.Resources.button_not_selected;
+            this.picShow.Location = new System.Drawing.Point(17, 104);
+            this.picShow.Name = "picShow";
+            this.picShow.Size = new System.Drawing.Size(48, 21);
+            this.picShow.TabIndex = 11;
+            this.picShow.TabStop = false;
+            this.picShow.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picShow);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -187,7 +187,7 @@
             this.Name = "Leaderboard";
             this.Text = "Leaderboard";
             this.Load += new System.EventHandler(this.Leaderboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -205,7 +205,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picShow;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

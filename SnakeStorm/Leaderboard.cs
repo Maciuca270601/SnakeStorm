@@ -17,6 +17,7 @@ namespace SnakeStorm
         SqlDataAdapter da;
         DataSet ds;
         DataRow dr;
+        bool leaderboardon = false;
        
         
 
@@ -50,50 +51,59 @@ namespace SnakeStorm
             label10.BackColor = Color.Transparent;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)//show
         {
-            pictureBox2.Image = Properties.Resources.button_selected;
-            dbConn.Open();
-            string query = "SELECT username,score FROM TabelaScore ORDER BY score DESC";
-            da = new SqlDataAdapter(query, dbConn);
-            ds = new DataSet("leaderboard");
-            da.Fill(ds, "leaderboard");
-            for(int currentRow = 0;currentRow<5;currentRow++)
+            if (leaderboardon == false)
             {
-                if (currentRow == 0)
+                leaderboardon = true;
+                picShow.Image = Properties.Resources.button_selected;
+                dbConn.Open();
+                string query = "SELECT username,score FROM TabelaScore ORDER BY score DESC";
+                da = new SqlDataAdapter(query, dbConn);
+                ds = new DataSet("leaderboard");
+                da.Fill(ds, "leaderboard");
+                for (int currentRow = 0; currentRow < 5; currentRow++)
                 {
-                    dr = ds.Tables["leaderboard"].Rows[currentRow];
-                    label1.Text = dr.ItemArray.GetValue(0).ToString();
-                    label6.Text = dr.ItemArray.GetValue(1).ToString();
+                    if (currentRow == 0)
+                    {
+                        dr = ds.Tables["leaderboard"].Rows[currentRow];
+                        label1.Text = dr.ItemArray.GetValue(0).ToString();
+                        label6.Text = dr.ItemArray.GetValue(1).ToString();
+                    }
+                    if (currentRow == 1)
+                    {
+                        dr = ds.Tables["leaderboard"].Rows[currentRow];
+                        label2.Text = dr.ItemArray.GetValue(0).ToString();
+                        label7.Text = dr.ItemArray.GetValue(1).ToString();
+                    }
+                    if (currentRow == 2)
+                    {
+                        dr = ds.Tables["leaderboard"].Rows[currentRow];
+                        label3.Text = dr.ItemArray.GetValue(0).ToString();
+                        label8.Text = dr.ItemArray.GetValue(1).ToString();
+                    }
+                    if (currentRow == 3)
+                    {
+                        dr = ds.Tables["leaderboard"].Rows[currentRow];
+                        label4.Text = dr.ItemArray.GetValue(0).ToString();
+                        label9.Text = dr.ItemArray.GetValue(1).ToString();
+                    }
+                    if (currentRow == 4)
+                    {
+                        dr = ds.Tables["leaderboard"].Rows[currentRow];
+                        label5.Text = dr.ItemArray.GetValue(0).ToString();
+                        label10.Text = dr.ItemArray.GetValue(1).ToString();
+                    }
                 }
-                if (currentRow == 1)
-                {
-                    dr = ds.Tables["leaderboard"].Rows[currentRow];
-                    label2.Text = dr.ItemArray.GetValue(0).ToString();
-                    label7.Text = dr.ItemArray.GetValue(1).ToString();
-                }
-                if (currentRow == 2)
-                {
-                    dr = ds.Tables["leaderboard"].Rows[currentRow];
-                    label3.Text = dr.ItemArray.GetValue(0).ToString();
-                    label8.Text = dr.ItemArray.GetValue(1).ToString();
-                }
-                if (currentRow == 3)
-                {
-                    dr = ds.Tables["leaderboard"].Rows[currentRow];
-                    label4.Text = dr.ItemArray.GetValue(0).ToString();
-                    label9.Text = dr.ItemArray.GetValue(1).ToString();
-                }
-                if (currentRow == 4)
-                {
-                    dr = ds.Tables["leaderboard"].Rows[currentRow];
-                    label5.Text = dr.ItemArray.GetValue(0).ToString();
-                    label10.Text = dr.ItemArray.GetValue(1).ToString();
-                }
+
+                dbConn.Close();
             }
-
-
-            dbConn.Close();
+            else
+            {
+                picShow.Image = Properties.Resources.button_not_selected1;
+                leaderboardon = false;
+                label1.Text = "";
+            }
         }
 
        

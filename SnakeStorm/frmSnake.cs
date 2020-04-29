@@ -63,7 +63,7 @@ namespace SnakeStorm
         public frmSnake()
         {
             InitializeComponent();
-            gameplayer.URL = songlink;
+           // gameplayer.URL = songlink;
 
             gameBoardField = new GameBoardFields[17, 17];
             snakeXY = new SnakeCoordinates[256];
